@@ -41,7 +41,9 @@ var server = http.createServer((req, res) => {
 		if (req.url.match(proxyRoute.sourceUrlRegex)) {
 			console.log(`-> ${req.url} => ${proxyRoute.targetUrl + req.url}`);
 			if (proxyRoute.targetUrl.startsWith('https')) {
-				httpsProxy.web(req, res, { target: proxyRoute.targetUrl });
+				console.log(`For redirecting https, configure SSL certs in the code!`)
+				// Add SSL certificates and uncomment
+				// httpsProxy.web(req, res, { target: proxyRoute.targetUrl });
 			} else {
 				httpProxy.web(req, res, { target: proxyRoute.targetUrl });
 			}
