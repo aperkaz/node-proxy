@@ -28,6 +28,5 @@ This configurations will route all the requests to `*/test-endpoint` to `http://
 npm run start
 ```
 
-## Responsible team
-
-Softwerk Team.
+## License
+MIT © [Alain Perkaz](https://aperkaz.github.io)
