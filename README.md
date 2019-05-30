@@ -2,6 +2,8 @@
 
 Simple http/https-proxy build using [http-proxy](https://github.com/nodejitsu/node-http-proxy) and node.js.
 
+IMPORTANT: when redirecting https traffic, dont forget to generate the SSL certificates and place them inside the project.
+
 ## Configuration
 
 ### Setup https
@@ -10,7 +12,7 @@ In order to setup the https,
 
 ### Port
 
-The port in which the service runs can be modified in the start script.
+The port in which the service runs can be modified in the start script. Defaults to `8011`.
 
 ### Proxy routes
 
