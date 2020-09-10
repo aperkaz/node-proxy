@@ -5,7 +5,7 @@
 		"start": "PORT=8011 node proxy.js"
 	},
 	"dependencies": {
-		"http-proxy": "^1.16.2",
+		"http-proxy": "^1.18.1",
 		"node-http-proxy": "^0.2.3",
 		"ssl-root-cas": "^1.2.5"
 	}
